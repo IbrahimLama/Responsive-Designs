@@ -33,7 +33,7 @@
 - [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
-
+This was a refereshment for building responsive designs, using the basics HTML and css
 ## Overview
 
 
@@ -42,14 +42,6 @@ Mobile
 
 Desktop
 (https://i.imgur.com/DPHX17k.png)
-
-
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
 
 ### Built With
 
@@ -75,4 +67,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - GitHub [IbrahimLama](https://github.com/IbrahimLama)
-- LinkedIn [@your-twitter](https://www.linkedin.com/in/lama-ibrahim/)
+- LinkedIn [Lama Ibrahim](https://www.linkedin.com/in/lama-ibrahim/)
