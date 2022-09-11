@@ -21,8 +21,38 @@
       rel="stylesheet"
     />
 
-    <title>Interior Design</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link href="./style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="Header" id="navbar">
+      <button>this interior</button>
+      <a href="#home" class="active">Home</a>
+      <a href="#news">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="Icon MenuIcon" onclick="toggleMenu()">
+        <span class="material-icons">
+          menu
+        </span>
+      </a>
+      <a class="Icon CloseIcon" onclick="toggleMenu()">
+        <span class="material-icons">
+          close
+        </span>
+      </a>
+    </div>
+    <script>
+      function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "Header") {
+          navbar.className += " Responsive";
+        } else {
+          navbar.className = "Header";
+        }
+      }
+      </script>
   </body>
 </html>

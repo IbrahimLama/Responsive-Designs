@@ -1,3 +1,89 @@
+$light-grey: #F2F2F2;
+$white: #FFFFFF;
+$black: #000000;
+
 body {
     font-family: "Poppins", sans-serif;
+    background-color: $black;
+}
+
+.Header {
+    overflow: hidden;
+
+    a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+        text-decoration: none;
+    }
+
+    a.active {
+        border-bottom: 2px solid $white;
+        color: $white;
+    }
+
+    .Icon {
+        display: none;
+        color: $light-grey;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 20px 12px;
+    }
+
+    .Header {
+        a:not(:first-child) {
+            display: none;
+        }
+
+        a.MenuIcon {
+            float: right;
+            display: block;
+        }
+
+        button {
+            width: 120px;
+            padding: 8px;
+            border: 1px solid $white;
+            font-family: 'Crimson Pro';
+            font-weight: 200;
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $black;
+        }
+    }
+
+    .Header.Responsive {
+        height: calc(100vh - 40px);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+
+        .Icon, button {
+            display: none;
+        }
+
+        .CloseIcon {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        a:not(.Icon) {
+            float: none;
+            display: block;
+            text-align: center;
+            margin: 0 auto 32px;
+            width: fit-content;
+        }
+    }
 }
