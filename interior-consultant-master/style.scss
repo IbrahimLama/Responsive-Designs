@@ -5,10 +5,13 @@ $black: #000000;
 body {
     font-family: "Poppins", sans-serif;
     background-color: $black;
+    margin: 50px 85px;
 }
 
 .Header {
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 
     a {
         font-style: normal;
@@ -19,6 +22,10 @@ body {
         text-decoration: none;
     }
 
+    .Links a {
+        margin-right: 86px;
+    }
+
     a.active {
         border-bottom: 2px solid $white;
         color: $white;
@@ -27,6 +34,59 @@ body {
     .Icon {
         display: none;
         color: $light-grey;
+    }
+
+    button {
+        width: 120px;
+        padding: 8px;
+        border: 1px solid $white;
+        font-family: 'Crimson Pro';
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $black;
+    }
+}
+
+.Container {
+    display: flex;
+    margin-top: 145px;
+
+    .Section1 {
+        width: 40%;
+        margin-right: 5%;
+    }
+
+    .Title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        color: $white;
+        font-family: 'Lora';
+    }
+
+    .Content {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $white;
+        margin: 40px 0;
+    }
+
+    .ReadMoreBtn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: $black;
+        color: $white;
+        padding: 0;
+    }
+
+    .InteriorBG {
+        width: 700px;
     }
 }
 
@@ -46,17 +106,8 @@ body {
             display: block;
         }
 
-        button {
-            width: 120px;
-            padding: 8px;
-            border: 1px solid $white;
-            font-family: 'Crimson Pro';
-            font-weight: 200;
-            font-size: 14px;
-            line-height: 16px;
-            text-transform: uppercase;
-            color: $white;
-            background-color: $black;
+        .Links {
+            display: none;
         }
     }
 
@@ -66,6 +117,10 @@ body {
         position: relative;
         flex-direction: column;
         justify-content: center;
+
+        .Links {
+            display: block;
+        }
 
         .Icon, button {
             display: none;
@@ -84,6 +139,15 @@ body {
             text-align: center;
             margin: 0 auto 32px;
             width: fit-content;
+        }
+    }
+
+    .Container {
+        margin-top: 38px;
+
+        .Content {
+            margin: 25px 0;
+            width: 250px;
         }
     }
 }

@@ -29,10 +29,12 @@
   <body>
     <div class="Header" id="navbar">
       <button>this interior</button>
-      <a href="#home" class="active">Home</a>
-      <a href="#news">Collection</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <div class='Links'>
+        <a href="#home" class="active">Home</a>
+        <a href="#news">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
       <a class="Icon MenuIcon" onclick="toggleMenu()">
         <span class="material-icons">
           menu
@@ -43,6 +45,26 @@
           close
         </span>
       </a>
+    </div>
+    <div class="Container">
+      <section class="Section1">
+        <div class="Title">
+          Modern interior
+        </div>
+        <div>
+          <p class="Content">
+            A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.
+          </p>
+          <button class="ReadMoreBtn">
+            Read more
+            <span class="material-icons material-symbols-outlined">
+              arrow_right_alt
+            </span></button>
+        </div>
+      </section>
+      <section>
+        <img src="./images/photo1.png" alt="interior" class="InteriorBG"/>
+      </section>
     </div>
     <script>
       function toggleMenu() {
