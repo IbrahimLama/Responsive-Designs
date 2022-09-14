@@ -1,6 +1,7 @@
 $light-grey: #F2F2F2;
 $white: #FFFFFF;
 $black: #000000;
+$grey: #828282;
 
 body {
     font-family: "Poppins", sans-serif;
@@ -77,18 +78,81 @@ body {
     }
 
     .ReadMoreBtn {
+        display: flex;
+        align-items: center;
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
         background-color: $black;
         color: $white;
         padding: 0;
+
+        span {
+            margin-left: 10px;
+        }
     }
 
     .InteriorBG {
-        width: 700px;
+        width: 95%;
+        max-width: 700px;
+    }
+
+    .Section2 {
+        position: relative;
+
+        .Profile {
+            position: absolute;
+            width: 300px;
+            height: 138px;
+            right: 52px;
+            // top: 536px;
+            top: 75%;
+            max-width: 300px;
+            background-color: $black;
+            padding: 18px;
+
+            .Portfolio {
+                display: flex;
+            }
+
+            .Image {
+                width: 50px;
+                border-radius: 50%;
+            }
+
+            .Job {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 12px;
+                color: $grey;
+            }
+
+            .Description {
+                margin-top: 20px;
+                width: 210px;
+                font-family: 'Lora';
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                color: $white;
+            }
+
+            .Header {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                color: $white;
+                margin-bottom: 6px;
+            }
+
+            .RightSection {
+                margin-left: 14px;
+            }
+        }
+
     }
 }
+
 
 
 @media screen and (max-width: 600px) {
@@ -144,10 +208,31 @@ body {
 
     .Container {
         margin-top: 38px;
+        display: block;
+
+        .Section1 {
+            width: 100%;
+        }
 
         .Content {
             margin: 25px 0;
             width: 250px;
+        }
+
+        .Section2 {
+            margin-top: 25px;
+
+            .InteriorBG {
+                width: 100%;
+            }
+
+            .Profile {
+                position: absolute;
+                width: 300px;
+                height: 138px;
+                right: 30px;
+            }
+
         }
     }
 }
